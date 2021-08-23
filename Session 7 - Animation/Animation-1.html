@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            display: flex;
+            width: 650px;
+            height: 50px;
+            background-color: wheat;
+            border-radius: 10px;
+            color: white;
+        }
+        .column-left{
+            display: flex;
+            flex: 1;
+            background-color: brown;
+            justify-content: flex-end;
+            align-items: center;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .column-right{
+            display: flex;
+            flex: 3;
+        }
+        .column-right-percent{
+            display: flex;
+            align-items: center;
+            background-color: rgb(216, 45, 45);
+            
+            animation-delay: 0.5s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: linear; */
+            /* animation-direction: alternate; */
+            animation-play-state: running;
+        }
+
+        @keyframes bw{
+            from { 
+                width: 0px;
+            }
+            to {
+                width: 20%;
+            }
+        }
+        @keyframes st{
+            from { 
+                width: 0px;
+            }
+            to {
+                width: 40%;
+            }
+        }
+        @keyframes user{
+            from { 
+                width: 0px;
+            }
+            to {
+                width: 60%;
+            }
+        }
+        @keyframes vis{
+            from { 
+                width: 0px;
+            }
+            to {
+                width: 70%;
+            }
+        }
+        @keyframes ba{
+            from { 
+                width: 0px;
+            }
+            to {
+                width: 95%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <section class="column-left">
+            <span style="margin-right: 15px;">BANDWIDTH</span>
+        </section>
+        <section class="column-right">
+            <div class="column-right-percent" style="width: 20%; animation-name: bw;">
+                <span style="margin-left: 20px;">20%</span>
+            </div>
+        </section>
+    </div><br>
+    <div class="all">
+        <section class="column-left" style="background-color: green;">
+            <span style="margin-right: 15px;">STORAGE</span>
+        </section>
+        <section class="column-right">
+            <div class="column-right-percent" style="width: 40%; animation-name: st;background-color: rgb(45, 216, 82);">
+                <span style="margin-left: 20px;">40%</span>
+            </div>
+        </section>
+    </div><br>
+    <div class="all">
+        <section class="column-left" style="background-color: pink;">
+            <span style="margin-right: 15px;">USERS</span>
+        </section>
+        <section class="column-right">
+            <div class="column-right-percent" style="width: 60%; animation-name: user;background-color: rgb(252, 160, 175);">
+                <span style="margin-left: 20px;">60%</span>
+            </div>
+        </section>
+    </div><br>
+    <div class="all">
+        <section class="column-left" style="background-color: blue;">
+            <span style="margin-right: 15px;">VISITOR</span>
+        </section>
+        <section class="column-right">
+            <div class="column-right-percent" style="width: 70%; animation-name: vis;background-color: rgb(47, 47, 240);">
+                <span style="margin-left: 20px;">70%</span>
+            </div>
+        </section>
+    </div><br>
+    <div class="all">
+        <section class="column-left" style="background-color: blueviolet;">
+            <span style="margin-right: 15px;">BASIC</span>
+        </section>
+        <section class="column-right">
+            <div class="column-right-percent" style="width: 95%; animation-name: ba;background-color: rgb(159, 76, 238);">
+                <span style="margin-left: 20px;">95%</span>
+            </div>
+        </section>
+    </div><br>
+
+</body>
+</html>
