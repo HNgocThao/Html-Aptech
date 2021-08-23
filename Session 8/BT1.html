@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Image 8/https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <style>
+        .all{
+            display: flex;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 15px;
+        }
+        .column-left{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .navigaton-bar{
+            color: rgba(0, 0, 0, 0.582)
+        }
+        .navigaton-bar li:hover{
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+        }
+        .column-left-box{
+            display: flex;
+        }
+        .column-left-box1{
+            display: flex;
+            flex: 1;
+        }
+        .column-left-box2{
+            display: flex;
+            flex: 4;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .rectangle{
+            display: flex;
+            height: 35px;
+            width: 70px;
+            border-radius: 20px;
+            border: 0.5px solid rgb(21, 216, 21);
+            /* background-color: blue; */
+            justify-content: center;
+            align-items: center;
+            color: rgb(21, 216, 21);
+        }
+        .rectangle:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .line{
+            width: 100%;
+            height: 1px;
+            background-color: rgb(212, 203, 203);
+        }
+        .column-right{
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            color: rgba(0, 0, 0, 0.582);
+        }
+        .column-right-read{
+            color: rgb(21, 216, 21);
+            font-size: 13px;
+        }
+        .column-right-read > a:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .column-right-row{
+            display: flex;
+            align-items: center;
+        }
+        @media screen and (max-width: 900px){
+            .all{
+                flex-direction: column;
+            }
+            .menuitem {
+            margin: -5px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <section class="column-left">
+            <h3 style="margin-top: 0;">Links</h3>
+            <ul class="navigaton-bar" style="list-style: none;">
+                <li class="menuitem">> People</li><br/>
+                <li class="menuitem">> News Publications</li><br/>
+                <li class="menuitem">> Marketing & IT</li><br/>
+                <li class="menuitem">> Business Strategy</li><br/>
+                <li class="menuitem">> Untold Stories</li><br/><br/>
+            </ul>
+            <div class="line"></div><br/>
+            <h3>Publications</h3>
+            <div class="column-left-box">
+                <div class="column-left-box1">
+                    <img src="./Image 8/anh1.jpg" style="width: 40px; height: 40px; border-radius: 20px;" alt="HS">
+                </div>
+                <div class="column-left-box2">
+                    <strong>Htmlstream</strong>
+                    <p style="color: rgba(0, 0, 0, 0.582);">
+                        This is where we sit down, grab a cup of coffee and 
+                        dial in the details.
+                    </p>
+                    <div class="rectangle">
+                        <p>Follow</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Pixeel</h3>
+            <div class="column-left-box">
+                <div class="column-left-box1">
+                    <img src="./Image 8/anh2.png" style="width: 40px; height: 40px; border-radius: 20px;" alt="HS">
+                </div>
+                <div class="column-left-box2">
+                    <strong>BWM</strong>
+                    <p style="color: rgba(0, 0, 0, 0.582);">
+                        This is where we sit down, grab a cup of coffee and 
+                        dial in the details.
+                    </p>
+                    <div class="rectangle">
+                        <p>Follow</p>
+                    </div>
+                </div>
+            </div>
+            <br/> <br/> <br/>
+        </section>
+        <div class="line" style="width: 1px; height: auto; margin-left: 50px; margin-right: 50px;"></div>
+        <aside class="column-right">
+            <time>1 June 2017</time>
+            <h2 style="margin-top: 10px; margin-bottom: 0px; color: black;">Exclusive Interview with InVision's CEO</h2>
+            <p>
+                Clark Valberg is the founder and CEO of InVision. If you are a designer, 
+                you have probably gotten an email from Clark or from InVision at one time 
+                or another, but if you’re not familiar with the company.
+            </p>
+            <div class="column-right-read">
+                <a>Read more ...</a></div><br/>
+            <div class="line"></div><br/>
+            <div class="column-right-row">
+                <img src="./Image 8/anh3.jpg" style="width: 30px; height: 30px; border-radius: 15px;" alt="HS">
+                <span style="margin-left: 10px;">Alex Teseria</span>
+                <span class="iconify" data-icon="fluent:comment-note-24-regular" style="margin-left: 40px;"></span>
+                <span style="margin-left: 10px;">10 Comments</span>
+                <span class="iconify" data-icon="bytesize:heart" style="margin-left: 40px;"></span>
+                <span style="margin-left: 10px;">57 Likes</span>
+            </div><br/>
+            <div class="line"></div>
+            <br/><br/><br/><br/><br/><br/>
+            <!-- Two -->
+            <time>31 May 2017</time>
+            <h2 style="margin-top: 10px; margin-bottom: 0px; color: black;">Announcing a free plan for small teams</h2>
+            <p>
+                At Wake, our mission has always been focused on bringing openness and transparency 
+                to the design process. We’ve always believed that by providing a space where designers 
+                can share ongoing work not only empowers them to make better products.
+            </p>
+            <div class="column-right-read">
+                <a>Read more ...</a></div><br/>
+            <div class="line"></div><br/>
+            <div class="column-right-row">
+                <img src="./Image 8/anh3.jpg" style="width: 30px; height: 30px; border-radius: 15px;" alt="HS">
+                <span style="margin-left: 10px;">Sara Kajevnikova</span>
+                <span class="iconify" data-icon="fluent:comment-note-24-regular" style="margin-left: 40px;"></span>
+                <span style="margin-left: 10px;">8 Comments</span>
+                <span class="iconify" data-icon="bytesize:heart" style="margin-left: 40px;"></span>
+                <span style="margin-left: 10px;">36 Likes</span>
+            </div><br/>
+            <div class="line"></div>
+        </aside>
+    </div>
+
+
+
+</body>
+</html>
