@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            display: flex;
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #fdfcfc;
+            flex-direction: column;
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 5px 5px 5px rgb(116, 116, 116);
+        }
+        .header{
+            display: flex;
+        }
+        .header-left{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header-left >strong{
+            color: #0F2B51;
+            font-size: 20px;
+        }
+        .header-right{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .box{
+            display: flex;
+            width: 100px;
+            height: 40px;
+            background-color: #f1f0f0a8;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.637);
+        }
+        .box:hover{
+            cursor: pointer;
+        }
+        .box:focus{
+            background-color: #0F2B51;
+            color: white;
+            transition: 1s;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        thead > tr > th{
+            border: 1px solid #a8aab1;
+        }
+        tbody > tr > td{
+            border: 1px solid #a8aab1;
+        }
+        tfoot > tr > th{
+            border: 1px solid #a8aab1;
+        }
+        .header1{
+            height: 40px;
+            background-color: #0F2B51;
+            color: white;
+            text-align: left;
+        }
+        .header1 > th{
+            width: 120px;
+            padding-left: 10px;
+            color: rgb(223, 223, 0);
+        }
+        .body1{
+            height: 40px;
+            background-color: #fdfcfc;
+        }
+        .body1 >td {
+            padding-left: 10px;
+        }
+        .foot{
+            margin: 0 auto;
+            margin-top: 0px;
+        }
+        .foot-box{
+            display: flex;
+            width: 110px;
+            height: 25px;
+            background-color: #0F2B51;
+            align-items: center;
+            justify-content: center;
+            color: rgb(223, 223, 0);
+        }
+        .foot-box:hover{
+            cursor: pointer;
+        }
+        @media screen and (max-width:700px) {
+            .foot-box{
+                width: 70px;
+                font-size: 10px;
+                transition: 1s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+            <section class="header-left">
+                <span>CURRENTLY AVAILABLE</span><br/><br/>
+                <strong>Pricing Tables</strong>
+            </section>
+            <section class="header-right">
+                <div class="box" tabindex="1">Individual</div>
+                <div class="box" tabindex="2">Enterprise</div>
+            </div>
+        </section><br>
+
+        <!-- BẢNG THAM SỐ -->
+        <table>
+            <thead>
+                <tr class="header1">
+                    <th style="background-color: #fdfcfc;"></th>
+                    <th>Basic</th>
+                    <th>Starter</th>
+                    <th>Business</th>
+                    <th>Unify - Popular</th>
+                    <th>Extreme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="body1">
+                    <td style="font-weight: bold; font-size: 12px;">Domains</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>15</td>
+                </tr>
+                <tr class="body1">
+                    <td style="font-weight: bold; font-size: 12px;">WordPress</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr class="body1">
+                    <td style="font-weight: bold; font-size: 12px;">Page Builder</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+                <tr class="body1">
+                    <td style="font-weight: bold; font-size: 12px;">Pages</td>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>400+</td>
+                </tr>
+                <tr class="body1">
+                    <td style="font-weight: bold; font-size: 12px;">Elements</td>
+                    <td>400</td>
+                    <td>800</td>
+                    <td>1200</td>
+                    <td>1600</td>
+                    <td>1900+</td>
+                </tr>
+                <tr class="body1">
+                    <td style="font-weight: bold; font-size: 12px;">Support</td>
+                    <td>1 month</td>
+                    <td>2 months</td>
+                    <td>5 months</td>
+                    <td>9 months</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr class="body1" style="font-size: 15px;">
+                    <td style="font-weight: bold; font-size: 12px;">Price</td>
+                    <td style>$20.00</td>
+                    <td>$30.00</td>
+                    <td>$49.00</td>
+                    <td>$69.00</td>
+                    <td>$99.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="height: 40px;">
+                    <th></th>
+                    <th>
+                        <div class="foot foot-box">PURCHASE ></div></th>
+                    <th>
+                        <div class="foot foot-box">PURCHASE ></div></th>
+                    <th>
+                        <div class="foot foot-box">PURCHASE ></div></th>
+                    <th>
+                        <div class="foot foot-box">PURCHASE ></div></th>
+                    <th>
+                        <div class="foot foot-box">PURCHASE ></div></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
