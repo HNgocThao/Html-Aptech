@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0 auto;
+            max-width: 1000px;
+            padding: 15px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row1{
+            display: flex;
+            font-family: fantasy;
+        }
+        .row1 span{
+            transition: 0.5s ease-in;
+        }
+        .row1 span:hover{
+            /* color: #FE6466; */
+            cursor: pointer;
+        }
+        .row1 span:focus{
+            color: #FE6466;
+        }
+        .row2{
+            display: flex;
+            max-width: 1300px;
+            justify-content: center;
+        }   
+        .row2-square{
+            display: flex;
+            height: 150px;
+            width: 150px;
+            overflow: hidden;
+            border: 1px solid rgb(218, 213, 213);
+            margin: 10px;
+            
+        }
+        .row2-image{
+            display: flex;
+            filter: grayscale(100%);
+            height: 150px;
+            width: 150px;
+            transition-duration: 0.5s;
+        }
+        .row2-image:hover{
+            filter: grayscale(0%);
+            transition-property: 0.5s;
+            transform: scale(0.85);
+            cursor: pointer;
+        }
+        .row3{
+            display: flex;
+            max-width: 1300px;
+            justify-content: center;
+        } 
+        .all > strong{
+            font-size: 50px;
+        }
+        @media screen and (max-width: 1000px) { 
+            .row2{
+                flex:80%;
+                max-width: 100%;
+                /* justify-content: start; */
+            }
+            .row2-square{
+                max-width: 100%;
+            }
+            .row3{
+                flex:80%;
+                max-width: 100%;
+                /* scale: 0.8; */
+            }
+        }
+        @media screen and (max-width:600px) {
+            .all >strong{
+                font-size: 35px;
+            }
+            .hrr{
+                max-width: 450px;
+            }
+        }
+        @media screen and (max-width:500px) {
+            .hrr{
+                max-width: 400px;
+            }
+            .row2{
+                flex-direction: column;
+            }
+            .row2-square{
+                height: 350px;
+                width: 350px;
+            }
+            .row2-image{
+                height: 350px;
+                width: 350px;
+            }
+            .row3{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <strong class="item">OUR MEDIA GALLERY</strong>
+        <p style="width: 50px; height: 7px; background-color: #FE6466;">
+        <p style="text-align: center; max-width: 800px;">
+            Etiam varius sit amet est a varius. Nullam pharetra non diam non mollis. Pellentesque 
+            congue quam ipsum, non tempor arcu egestas non. Nullam placerat ante volutpat est 
+            scelerisque consequat.
+        </p>
+        <br/><br/><br/><br/>
+        <div class="row1">
+            <span href="#photos" style="margin-right: 40px;" tabindex="1">PHOTOS</span>
+            <span href="#videos" tabindex="2">VIDEOS</span>
+        </div><br/><br/>
+        <hr class="hrr" style="width: 500px;"><br/><br/>
+        <section class="row2" id="photos">
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img1.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img2.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img3.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img4.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img5.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img6.jpg"></div></div> 
+        </section>
+        <section class="row3" id="videos">
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img7.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img8.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img9.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img10.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img11.jpg"></div></div>
+            <div class="row2-square">
+                <div class="row2-image">
+                    <img src="./Image 8/img12.jpg"></div></div> 
+        </section>
+        
+    </div>
+</body>
+</html>
