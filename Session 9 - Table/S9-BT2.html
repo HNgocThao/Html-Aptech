@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .all{
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #fdfcfc;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 5px 5px 5px rgb(116, 116, 116);
+        }
+        .all > strong{
+            font-size: 40px;
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            /* width: 100%; */
+        }
+        tbody > tr{
+            border-bottom: 1px solid #ece7e7;
+        }
+        .box1{
+            display: table-cell;
+            vertical-align: top;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+
+        }
+        .box2{
+            display: table-cell;
+            /* vertical-align: middle; */
+            padding-left:  5px;
+        }
+        .box2 >h4:hover{
+            cursor: pointer;
+            border-bottom: 1px solid black;
+            width: fit-content;
+        }
+        .box3{
+            display: table-cell;
+            padding: 20px;
+            justify-content: center;
+            padding-right: 0px;
+            text-align: center;
+        }
+        
+        .box4{
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+            justify-content: center;
+        }
+        .khung{
+            display: flex;
+            width: 100px;
+            height: 40px;
+            background-color: #f1f0f0a8;
+            align-items: center;
+            justify-content: center;
+        }
+        .khung:hover{
+            cursor: pointer;
+            background-color: #d8d3d3;
+        }
+        .khung1{
+            display: flex;
+            width: 100px;
+            height: 40px;
+            background-color: #FE6466;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            animation: hieuung 1s;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+        }
+        .khung1:hover{
+            cursor: pointer;
+            background-color: #fe646775;
+            transform: scale(1.1);
+        }
+        .img1{
+            display: flex;
+            width: 120px;
+            height: 120px;
+            filter: grayscale(100%);
+        }
+        img:hover{
+            cursor: pointer;
+            filter: grayscale(0%);
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        @keyframes hieuung{
+            0%{
+                background-color: #FE6466;
+            }
+            50%{
+                background-color: #f3393c;
+            }
+        }
+        @media screen and (max-width: 650px){
+            .img1 {
+                width: 80px;
+                height: 80px;
+                transition: 1s;
+            }
+            .khung{
+                width: 80px;
+                height: 30px;
+                font-size: 10px;
+                transition: 1s;
+            }
+            .khung1{
+                width: 80px;
+                height: 30px;
+                font-size: 10px;
+                transition: 1s;
+            }
+            .all{
+                font-size: 10px;
+                transition: 1s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <strong class="item">TOUR DATES</strong>
+        <p style="width: 50px; height: 7px; background-color: #FE6466;">
+        <p style="text-align: center; max-width: 650px; font-size: 13px;">
+            Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. 
+            Vivamus a fringilla lorem, vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, 
+            enim orci viverra eros, fringilla porttitor lorem eros vel odio.
+        </p>
+        <br/><br/><br/><br/>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="box1" style="width: 80px;">
+                        <h1 style="font-size: 30px; margin-bottom: 0px;">27</h1>
+                        <span>Jun, 2015</span></td>
+                    <th>
+                        <div class="img1"><img src="./Image 9/anh1.jpg"></div></th>
+                    <td class="box2" style="width: 400px;">
+                        <h4>NAM ENIM EROS RHONCUS</h4>
+                        <span>8 Rue de Montpensier 75001, Paris, France, 18:00</span></td>
+                    <td style="width: 120px;">
+                        <h4>$15</h4>
+                        <span>PER TICKET</span></td>
+                    <th class="box3">
+                        <div class="khung">LEARN MORE</div></th>
+                    <th class="box4">
+                        <div class="khung1">BUY TICKET</div></th>
+                </tr>
+                <tr>
+                    <td class="box1" style="width: 80px;">
+                        <h1 style="font-size: 30px; margin-bottom: 0px;">01</h1>
+                        <span>Aug, 2015</span></td>
+                    <th>
+                        <div class="img1"><img src="./Image 9/anh1.jpg"></div></th>
+                    <td class="box2" style="width: 400px;">
+                        <h4>NULLA LOBORTIS ARCU EX</h4>
+                        <span>8 Rue de Montpensier 75001, Paris, France, 18:00</span></td>
+                    <td style="width: 120px;">
+                        <h4>$15</h4>
+                        <span>PER TICKET</span></td>
+                    <th class="box3">
+                        <div class="khung">LEARN MORE</div></th>
+                    <th class="box4">
+                        <div class="khung1">BUY TICKET</div></th>
+                </tr>
+                <tr>
+                    <td class="box1" style="width: 80px;">
+                        <h1 style="font-size: 30px; margin-bottom: 0px;">05</h1>
+                        <span>Oct, 2015</span></td>
+                    <th>
+                        <div class="img1"><img src="./Image 9/anh1.jpg"></div></th>
+                    <td class="box2" style="width: 400px;">
+                        <h4>ETIAM VARIUS SIT AMET EST A VARIUS</h4>
+                        <span>8 Rue de Montpensier 75001, Paris, France, 18:00</span></td>
+                    <td style="width: 120px;">
+                        <h4>$15</h4>
+                        <span>PER TICKET</span></td>
+                    <th class="box3">
+                        <div class="khung">LEARN MORE</div></th>
+                    <th class="box4">
+                        <div class="khung1">BUY TICKET</div></th>
+                </tr>
+                <tr>
+                    <td class="box1" style="width: 80px;">
+                        <h1 style="font-size: 30px; margin-bottom: 0px;">22</h1>
+                        <span>Nov, 2015</span></td>
+                    <th>
+                        <div class="img1"><img src="./Image 9/anh1.jpg"></div></th>
+                    <td class="box2" style="width: 400px;">
+                        <h4>ALIQUAM DIGNISSIM NON NISI IN TRISTIQUE</h4>
+                        <span>8 Rue de Montpensier 75001, Paris, France, 18:00</span></td>
+                    <td style="width: 120px;">
+                        <h4>$15</h4>
+                        <span>PER TICKET</span></td>
+                    <th class="box3">
+                        <div class="khung">LEARN MORE</div></th>
+                    <th class="box4">
+                        <div class="khung1">BUY TICKET</div></th>
+                </tr>
+            </tbody>
+            
+            
+        </table>
+    </div>
+</body>
+</html>
