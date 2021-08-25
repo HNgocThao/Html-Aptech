@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .all{
+            display: flex;
+            max-width: 460px;
+            margin: 0 auto;
+            background-color: #fdfcfc;
+            flex-direction: column;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            padding: 5px;
+            box-shadow: 5px 5px 5px rgb(95, 94, 94);
+        }
+        label{
+            font-weight: bold;
+        }
+        input:required{
+            height: 35px;
+            width: 98%;
+            background-color: #F1F1F1;
+            border: none;
+        }
+        .box1{
+            display: flex;
+            flex: 1;
+            background-color: #F77168;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+        }
+        .box2{
+            display: flex;
+            flex: 1;
+            background-color: #7AC37C;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+        }
+        p > ins:hover{
+            cursor: pointer;
+        }
+        .box1:hover{
+            cursor: pointer;
+            background-color: #f7726886;
+            transition: 1s;
+        }
+        .box2:hover{
+            cursor: pointer;
+            background-color: #7ac37d71;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <strong style="font-size: 30px;">Sign Up</strong>
+        <p>Please fill in this from to create an account.</p>
+        <hr style="border: 0.5px solid rgb(216, 215, 215); width: 100%;"/>
+        <!-- Đăng nhập -->
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter email"><br><br><br>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" required placeholder="Enter Password"><br><br><br>
+            <label for="pwd">Repeat Password</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" required placeholder="Repeat Password"><br><br><br>
+            <div>
+                <input type="checkbox" name="choose" value="Remember me">Rmember me
+            </div>
+        </form>
+        <!-- Check -->
+        <p>By creating an account you agree to our <ins style="color: #71BAFA;">Terms & Privacy</ins></p>
+        <section style="display: flex; height: 50px; width: 100%;">
+            <div class="box1">Cancel</div>
+            <div class="box2">Sign Up</div>
+        </section>
+        
+    </div>
+</body>
+</html>

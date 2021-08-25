@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <title>Document</title>
+    <style>
+        .all{
+            display: flex;
+            max-width: 780px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            flex-direction: column;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            box-shadow: 5px 5px 5px rgb(95, 94, 94);
+        }
+        .box{
+            display: flex;
+        }
+        .box-left{
+            display: flex;
+            flex: 3;
+            max-width: 600px;
+            background-color: #F2F2F2;
+            flex-direction: column;
+            box-shadow: 5px 5px 5px rgb(172, 169, 169);
+            border-radius: 8px;
+            border: 0.2px solid #e2e2e2;
+        }
+        .box-right{
+            display: flex;
+            width: 150px;
+            height: 160px;
+            background-color: #F2F2F2;
+            flex-direction: column;
+            box-shadow: 5px 5px 5px rgb(172, 169, 169);
+            border-radius: 4px;
+            border: 0.2px solid #e2e2e2;
+            margin-left: 20px;
+        }
+        .box-left-top{
+            display: flex;
+        }
+        .box-left-bottom{
+            display: flex;
+            flex-direction: column;
+            margin-top: -20px;
+        }
+        .box-column-left{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .box-column-left-1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box-column-right{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 10px;
+        }
+        input:required{
+            height: 25px;
+            width: 98%;
+        }
+        .box-column-left-1 input:required{
+            display: flex;
+            height: 25px;
+            width: 70%;
+        }
+        .ioni:hover{
+            cursor: pointer;
+            transform: scale(2);
+            transition: 1s;
+        }
+        .box-right-row{
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+        }
+        label{
+            font-weight: bold;
+        }
+        strong{
+            font-size: 14px;
+        }
+        button{
+            height: 30px;
+            border-radius: 6px;
+            width: 90%;
+            background-color: #555555;
+            color: white;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #6e6a6a98;
+            transition: 1s;
+        }
+        @media screen and (max-width:700px){
+            .box-left-top{
+                flex-direction: column;
+                transition: 1s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="box">
+    <!-- Box bên trái -->
+            <section class="box-left">
+                <div class="box-left-top">
+                    <div class="box-column-left">
+                        <strong>Billing Address</strong><br/>
+                        <form>
+                            <label for="name">
+                                <span class="iconify" data-icon="mdi:account" data-width="12">
+                                </span> Full name</label><br/><br/>
+                            <input id="name" name="name" required placeholder="Mr.Nobody"><br/><br/>
+                            <label for="email">
+                                <span class="iconify" data-icon="fluent:mail-20-filled" data-width="12">
+                                </span>  Email</label><br/><br/>
+                            <input type="email" required placeholder="nobody@gmail.com"><br/><br/>
+                            <label for="address">
+                                <span class="iconify" data-icon="fa:address-card-o" data-width="12">
+                                </span>  Address</label><br/><br/>
+                            <input required placeholder="01 Yen Bai"><br/><br/>
+                            <label for="city">
+                                <span class="iconify" data-icon="emojione-monotone:cityscape" data-width="12">
+                                </span> City</label><br/><br/>
+                            <input required placeholder="Da Nang"><br/><br/>
+                        </form>
+                        <div class="box-column-left-1">
+                            <form>
+                                <label>State</label><br/><br/>
+                                <input type="state" required placeholder="NY">
+                            </form>
+                            <form style="margin-right: -43px;">
+                                <label>Zip</label><br/><br/>
+                                <input type="zip" required placeholder="550000">
+                            </form>
+                        </div>
+                    </div>
+        <!-- Payment -->
+                    <div class="box-column-right">
+                        <strong>Payment</strong>
+                        <p style="margin-bottom: 23px; font-weight: bold;">Accepted Cards</p>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <span class="iconify ioni" data-icon="logos:visaelectron" data-width="15"></span>
+                            <span class="iconify ioni" data-icon="logos:mastercard" data-width="15"></span>
+                            <span class="iconify ioni" data-icon="fontisto:paypal" data-width="15"></span>
+                            <span class="iconify ioni" data-icon="logos:maestro" data-width="15"></span>
+                        </div><br/><br/>
+                        <form>
+                            <label for="name">Name on Card</label><br/><br/>
+                            <input type="name" required placeholder="Mr.Nobody"><br/><br/>
+                            <label for="credit number">Credit card number</label><br/><br/>
+                            <input type="credit number" required placeholder="111-222-333-444"><br/><br/>
+                            <label for="month1">Exp Month</label><br/><br/>
+                            <input type="month1" required placeholder="August"><br/><br/>
+                        </form>
+                        <div  class="box-column-left-1">
+                            <form>
+                                <label>Exp Year</label><br/><br/>
+                                <input type="exp" required placeholder="2021"><br/><br/>
+                            </form>
+                            <form style="margin-right: -43px;">
+                                <label>CVV</label><br/><br/>
+                                <input type="cvv" required placeholder="777">
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+        <!-- Check -->
+                <div class="box-left-bottom">
+                    <form>
+                        <input type="checkbox">Shipping address same as billing
+                    </form><br/>
+                    <div style="display: flex; justify-content: center; padding-bottom: 15px;">
+                        <button>Continue to checkout</button>
+                    </div>
+                </div>
+            </section>
+    <!-- Box bên phải     -->
+            <section class="box-right">
+                <div class="box-right-row">
+                    <span style="font-weight: bold;">Cart</span>
+                    <div style="font-weight: bold;">
+                        <span class="iconify" data-icon="mdi-light:cart" data-width="12"></span>
+                        <span>4</span></div>
+                    </div>
+                <div class="box-right-row">
+                    <span style="color: #4DA4F4;">Item1</span>
+                    <span>$30</span>
+                </div>
+                <div class="box-right-row">
+                    <span style="color: #4DA4F4;">Item2</span>
+                    <span>$10</span>
+                </div>
+                <div class="box-right-row">
+                    <span style="color: #4DA4F4;">Item3</span>
+                    <span>$20</span>
+                </div>
+                <hr style="width: 90%; border: 0.5px solid rgb(189, 184, 184);"/>
+                <div class="box-right-row" style="font-weight: bold;">
+                    <span>Total</span>
+                    <span>$60</span>
+                </div>
+            </section>
+        </div>
+	</div>
+</body>
+</html>

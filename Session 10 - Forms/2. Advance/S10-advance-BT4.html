@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .all{
+            display: flex;
+            max-width: 580px;
+            height: 420px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 5px 5px 15px rgb(95, 94, 94);
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .left{
+            display: flex;
+            flex: 1;
+            background-color: #5952FF;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .right{
+            display: flex;
+            flex: 1.2;
+            background-color: #FFFFFF;
+            flex-direction: column;
+        }
+        input:required{
+            display: flex;
+            height: 20px;
+            width: 100%;
+        }
+        .right-top{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .right-mid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .right-bottom{
+            display: flex;
+            padding: 20px;
+            justify-content: flex-end;
+            margin-top: 30px;
+            color: rgba(0, 0, 0, 0.493);
+            font-size: 10px;
+        }
+        .box{
+            display: flex;
+            height: 30px;
+            width: 60px;
+            border-radius: 6px;
+            background-color: #5952FF;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:hover{
+            cursor: pointer;
+            background-color: #5852ff80;
+            transition: 1s;
+        }
+        .right-mid span:hover{
+            cursor: pointer;
+        }
+        .right-bottom span:hover{
+            cursor: pointer;
+            color: #4DA4F4;
+            font-weight: bold;
+            transition: 1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="all">
+        <section class="left">
+            <img style="width: 200px;" src="../Image 10/anh2.1.png">
+        </section>
+        <section class="right">
+            <div class="right-top">
+                <img style="width: 200px;" src="../Image 10/anh4.png">
+                <div>
+                    <strong style="font-size: 16px;">Sign in</strong><br/><br/>
+                    <form>
+                        <input type="email" required placeholder="Email"><br/>
+                        <input type="password" required placeholder="Password">
+                    </form><br/>
+                    <div class="right-mid">
+                        <div>
+                            <span style="color: #4DA4F4;">Forgot password ?</span></div>
+                        <div class="box">Sign in</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-bottom">
+                <span style="margin-right: 10px;">STATUS</span>
+                <span>TERMS</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

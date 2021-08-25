@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .total{
+            display: flex;
+            max-width: 780px;
+            height: 550px;
+            margin: 0 auto;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 5px 5px 15px rgb(95, 94, 94);
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .total-left{
+            display: flex;
+            flex: 1;
+            background-color: #19ECB7;
+            justify-content: flex-end;
+            align-items: center;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .total-right{
+            display: flex;
+            flex: 1.4;
+            background-color: #FFFFFF;
+            align-items: center;
+        }
+        .left{
+            display: flex;
+            max-width: 250px;
+            height: 420px;
+            background-color: #19ECB7;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 5px 5px 20px rgb(95, 94, 94);
+        }
+        .right{
+            display: flex;
+            max-width: 400px;
+            height: 420px;
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 5px 5px 20px rgb(95, 94, 94);
+        }
+        .left > em{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .left > p{
+            font-weight: bold;
+            padding-left: 60px;
+            padding-right: 60px;
+            text-align: center;
+        }
+        .right{
+            display: flex;
+            flex: 1.2;
+            background-color: #FFFFFF;
+            flex-direction: column;
+        }
+        .right-top{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .right-mid{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        .right-bottom{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-weight: bold;
+        }
+        .box:hover{
+            cursor: pointer;
+            background-color: #5852ff80;
+            transition: 1s;
+        }
+        .right-bottom span:hover{
+            cursor: pointer;
+            color: #4da3f4cb;
+            transition: 1s;
+        }
+        .right-top span:hover{
+            cursor: pointer;
+            color: #4da3f4c9;
+            transition: 1s;
+        }
+        input:required{
+            display: flex;
+            height: 20px;
+            width: 100%;
+        }
+        label{
+            font-weight: bold;
+        }
+        button{
+            height: 30px;
+            border-radius: 6px;
+            width: 103%;
+            background-color: #19ECB7;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #19ecb75d;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="total">
+    <!-- Left -->
+        <div class="total-left">
+            <section class="left">
+                <img style="width: 100px;" src="../Image 10/anh5.png">
+                <em>CleanMyCar</em>
+                <p>India's first waterless car cleaning company</p>
+            </section>
+        </div>
+    <!-- Right -->
+        <div class="total-right">
+            <section class="right">
+                <div class="right-top">
+                    <span style="margin-right: 10px;">Need help ?</span>
+                </div>
+                <div class="right-mid">
+                    <h2 style="display: flex; justify-content: center;">Log in</h2><br/><br/>
+                    <div>
+                        <form>
+                            <label>Email</label><br/>
+                            <input type="email" required placeholder="Email"><br/>
+                            <label>Password</label>
+                            <input type="password" required placeholder="Password">
+                        </form>
+                        <div class="right-bottom">
+                            <span>Forgot password ?</span>
+                        </div>
+                    </div><br/><br/><br/>
+                    <button>Login</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+</body>
+</html>
